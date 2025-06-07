@@ -1,10 +1,11 @@
-from itertools import *
-# n = 1
-# for i in product("АБВГДЕЖЗИК", repeat=3):
-#     word = "".join(i)
-#     if word == "АЖЕ":
-#         print(n)
-#     n += 1 
+from itertools import product
+n = 1
+for i in product("АБВГДЕЖЗИК", repeat=3):
+    """Все возможные комбнации слов с этими наборами букв"""
+    word = "".join(i) #Делаем из списка строку ["A", "Ж" , "E"] -> АЖЕ
+    if word == "АЖЕ":
+        print(n)
+    n += 1 
 
 
 
