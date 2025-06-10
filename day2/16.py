@@ -63,3 +63,24 @@
 
 
 
+
+
+# def task1(start,end):
+#     if start > end or start==5 :
+#         return 0
+#     if start == end:
+#         return 1
+#     else:
+#         return task1(start+1, end) + task1(start * 3, end)
+# print(task1(1,21))
+
+def task(start,end):
+    if start > end:
+        return 0
+    if start == end:
+        return 1
+    if start == 26:
+        return 0
+    else:
+        return task(start+2, end)+ task(start*2,end)
+print(task(2,14)*task(14,56))

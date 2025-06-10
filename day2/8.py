@@ -77,15 +77,31 @@
 
 
 """6"""
-a = []
-for n in range(3,10000):
-    s = "1" + "2" * n 
-    while "12" in s or "322" in s or "222" in s:
-        if "12" in s:
-            s = s.replace("12","2",1) 
-        if "322" in s:
-            s = s.replace("322","21",1) 
-        if ">0" in s:
-            s = s.replace("222","3",1)
-    a.append(s.count("3") * 3 + s.count("2") *  2 + s.count("1"))
-print(max(a))
+# a = []
+# for n in range(3,10000):
+#     s = "1" + "2" * n 
+#     while "12" in s or "322" in s or "222" in s:
+#         if "12" in s:
+#             s = s.replace("12","2",1) 
+#         if "322" in s:
+#             s = s.replace("322","21",1) 
+#         if ">0" in s:
+#             s = s.replace("222","3",1)
+#     a.append(s.count("3") * 3 + s.count("2") *  2 + s.count("1"))
+# print(max(a))
+
+
+
+
+# max_v = 0
+# for n in range(4,10000): #(3 < n < 10 000).
+#     s = "7" + n * "2"
+#     while "72" in s or "322" in s or "2222" in s:
+#         if "72" in s:
+#             s.replace("72", "2",1)
+#         if "322"in s:
+#             s.replace("322","27",1)
+#         if "222" in s:
+#             s.replace("222","3",1)
+#     max_v = max(max_v,sum(list(map(int , s))))
+# print(max_v)
